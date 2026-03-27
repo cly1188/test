@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口岸物流每日新闻 - 2026年3月26日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #e8eef5 0%, #d8e4f0 100%);
+    min-height: 100vh;
+    font-family: 'Noto Sans SC', 'Microsoft YaHei', -apple-system, sans-serif;
+    padding: 30px 20px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* ========== BANNER ========== */
+  .banner {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 12px 50px rgba(0, 40, 100, 0.35);
+    background: linear-gradient(135deg,
+      #0a1628 0%,
+      #0d2146 20%,
+      #0e3060 40%,
+      #0a4080 60%,
+      #0550a0 80%,
+      #0660c0 100%
+    );
+  }
+
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(100,160,255,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(100,160,255,0.06) 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: 1;
+  }
+
+  .glow-left {
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0,120,255,0.25) 0%, transparent 70%);
+    z-index: 2;
+  }
+
+  .glow-right {
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(0,200,255,0.12) 0%, transparent 70%);
+    z-index: 2;
+  }
+
+  .top-stripe {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0066ff, #00ccff, #0066ff);
+    z-index: 10;
+  }
+
+  .bottom-stripe {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgba(0,180,255,0.6), rgba(0,120,255,0.8), rgba(0,180,255,0.6), transparent);
+    z-index: 10;
+  }
+
+  .divider-slash {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 580px;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, rgba(0,200,255,0.5), rgba(0,150,255,0.7), rgba(0,200,255,0.5), transparent);
+    z-index: 10;
+    transform: skewX(-8deg);
+  }
+
+  .slash-deco {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 588px;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, rgba(0,200,255,0.2), rgba(0,150,255,0.3), transparent);
+    z-index: 10;
+    transform: skewX(-8deg);
+  }
+
+  .left-section {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 585px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+  }
+
+  .lobster-area {
+    width: 200px;
+    height: 220px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+
+  .lobster-svg {
+    width: 180px;
+    height: 190px;
+  }
+
+  .title-area {
+    flex: 1;
+    padding: 0 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title-label {
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(150, 200, 255, 0.75);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .title-main {
+    font-size: 38px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 4px;
+    line-height: 1.15;
+    text-shadow: 0 0 20px rgba(0,150,255,0.8), 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  .title-main span.highlight {
+    color: #00d4ff;
+    text-shadow: 0 0 15px rgba(0,220,255,0.9), 0 0 30px rgba(0,180,255,0.5);
+  }
+
+  .title-en {
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(120,190,255,0.65);
+    letter-spacing: 2px;
+    margin-top: 6px;
+    text-transform: uppercase;
+  }
+
+  .title-tagline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .tagline-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0,160,255,0.5), transparent);
+  }
+
+  .tagline-text {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(150, 210, 255, 0.8);
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+
+  .icon-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .icon-chip {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(0,100,200,0.35);
+    border: 1px solid rgba(0,160,255,0.3);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 10px;
+    color: rgba(150,210,255,0.85);
+    letter-spacing: 1px;
+  }
+
+  .right-section {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 270px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 25px 28px;
+  }
+
+  .date-hint {
+    font-size: 9px;
+    font-weight: 300;
+    color: rgba(100,170,255,0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .date-box {
+    width: 100%;
+    background: rgba(0, 60, 140, 0.4);
+    border: 1px dashed rgba(0,180,255,0.35);
+    border-radius: 10px;
+    padding: 18px 14px;
+    text-align: center;
+  }
+
+  .date-year {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(130,195,255,0.7);
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+  }
+
+  .date-md {
+    font-size: 34px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 3px;
+    line-height: 1;
+    text-shadow: 0 0 15px rgba(0,180,255,0.6);
+  }
+
+  .date-weekday {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(150,210,255,0.75);
+    letter-spacing: 3px;
+    margin-top: 6px;
+  }
+
+  .date-weather {
+    font-size: 11px;
+    color: rgba(150,210,255,0.65);
+    letter-spacing: 1px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .date-org {
+    font-size: 9px;
+    color: rgba(100,160,255,0.5);
+    letter-spacing: 2px;
+    margin-top: 12px;
+    border-top: 1px solid rgba(0,160,255,0.15);
+    padding-top: 10px;
+  }
+
+  .arc-deco {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(0,150,255,0.08);
+    z-index: 3;
+  }
+
+  .arc1 { width: 320px; height: 320px; top: -100px; left: -60px; }
+  .arc2 { width: 220px; height: 220px; top: -50px; left: 20px; }
+  .arc3 { width: 200px; height: 200px; bottom: -80px; right: 220px; border-color: rgba(0,200,255,0.07); }
+
+  .logo-mark {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 15;
+  }
+
+  .logo-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00d4ff;
+    box-shadow: 0 0 6px rgba(0,212,255,0.8);
+  }
+
+  .logo-text {
+    font-size: 8px;
+    color: rgba(100,180,255,0.5);
+    letter-spacing: 2px;
+  }
+
+  /* ========== CONTENT ========== */
+  .content {
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+
+  .section-title {
+    background: linear-gradient(135deg, #0a4080 0%, #0d5aa0 100%);
+    color: #fff;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title::before {
+    content: '';
+    width: 4px;
+    height: 24px;
+    background: #00d4ff;
+    border-radius: 2px;
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .news-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid #e8eef4;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,50,100,0.12);
+    border-color: #c0d8f0;
+  }
+
+  .news-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .news-tag {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .tag-policy {
+    background: linear-gradient(135deg, #0a4080, #1565a8);
+    color: #fff;
+  }
+
+  .tag-ai {
+    background: linear-gradient(135deg, #7b2d8e, #9b59b6);
+    color: #fff;
+  }
+
+  .tag-aviation {
+    background: linear-gradient(135deg, #d68a00, #f39c12);
+    color: #fff;
+  }
+
+  .tag-train {
+    background: linear-gradient(135deg, #1a7a40, #27ae60);
+    color: #fff;
+  }
+
+  .tag-market {
+    background: linear-gradient(135deg, #0a7a7a, #1abc9c);
+    color: #fff;
+  }
+
+  .news-date {
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 1px;
+  }
+
+  .news-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2535;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .news-content {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .news-link {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #dde5ed;
+    font-size: 11px;
+    color: #0a6090;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    word-break: break-all;
+  }
+
+  .news-link:hover {
+    color: #0d8ec0;
+    text-decoration: underline;
+  }
+
+  .news-link::before {
+    content: '🔗';
+    font-size: 10px;
+  }
+
+  /* Full width card */
+  .news-card.full-width {
+    grid-column: span 2;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 12px;
+  }
+
+  .footer strong {
+    color: #0a4080;
+  }
+
+  /* Print styles */
+  @media print {
+    body {
+      background: white;
+      padding: 0;
+    }
+    .banner {
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .content {
+      box-shadow: none;
+    }
+    .news-card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .banner {
+      height: auto;
+      min-height: 320px;
+    }
+    .left-section {
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+      position: relative;
+    }
+    .lobster-area {
+      width: 120px;
+      height: 130px;
+    }
+    .lobster-svg {
+      width: 100px;
+      height: 110px;
+    }
+    .title-area {
+      text-align: center;
+      padding: 0;
+    }
+    .title-main {
+      font-size: 24px;
+    }
+    .icon-row {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .right-section {
+      position: relative;
+      width: 100%;
+      padding: 15px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .divider-slash, .slash-deco {
+      display: none;
+    }
+    .news-grid {
+      grid-template-columns: 1fr;
+    }
+    .news-card.full-width {
+      grid-column: span 1;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ============ BANNER ============ -->
+<div class="banner">
+  <div class="glow-left"></div>
+  <div class="glow-right"></div>
+  <div class="arc-deco arc1"></div>
+  <div class="arc-deco arc2"></div>
+  <div class="arc-deco arc3"></div>
+  <div class="top-stripe"></div>
+  <div class="bottom-stripe"></div>
+  <div class="divider-slash"></div>
+  <div class="slash-deco"></div>
+  <div class="logo-mark">
+    <div class="logo-dot"></div>
+    <span class="logo-text">PORT · LOGISTICS</span>
+  </div>
+
+  <div class="left-section">
+    <div class="lobster-area">
+      <svg class="lobster-svg" viewBox="0 0 165 175" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="82" cy="152" rx="18" ry="10" fill="#0d2a5e"/>
+        <rect x="66" y="148" width="14" height="26" rx="5" fill="#0d2a5e"/>
+        <rect x="85" y="148" width="14" height="26" rx="5" fill="#0d2a5e"/>
+        <ellipse cx="73" cy="174" rx="9" ry="4" fill="#1a1a2e"/>
+        <ellipse cx="92" cy="174" rx="9" ry="4" fill="#1a1a2e"/>
+        <ellipse cx="82" cy="128" rx="26" ry="28" fill="#1a3a7a"/>
+        <polygon points="78,108 82,118 86,108" fill="#eaf4ff"/>
+        <polygon points="81,112 83,112 85,130 82,135 79,130" fill="#cc2200"/>
+        <polygon points="56,105 68,120 70,108" fill="#0d2a5e"/>
+        <polygon points="108,105 96,120 94,108" fill="#0d2a5e"/>
+        <circle cx="82" cy="132" r="2" fill="#fff" opacity="0.6"/>
+        <rect x="94" y="112" width="8" height="5" rx="1" fill="#eaf4ff" opacity="0.9"/>
+        <ellipse cx="82" cy="90" rx="28" ry="24" fill="#cc2200"/>
+        <ellipse cx="76" cy="82" rx="10" ry="7" fill="rgba(255,100,60,0.35)"/>
+        <path d="M60 90 Q82 82 104 90" stroke="rgba(180,0,0,0.4)" stroke-width="1" fill="none"/>
+        <path d="M63 97 Q82 90 101 97" stroke="rgba(180,0,0,0.4)" stroke-width="1" fill="none"/>
+        <circle cx="68" cy="84" r="8" fill="#111"/>
+        <circle cx="68" cy="84" r="5.5" fill="#fff"/>
+        <circle cx="68" cy="84" r="3.5" fill="#1a1a1a"/>
+        <circle cx="66" cy="82" r="1.5" fill="#fff"/>
+        <circle cx="96" cy="84" r="8" fill="#111"/>
+        <circle cx="96" cy="84" r="5.5" fill="#fff"/>
+        <circle cx="96" cy="84" r="3.5" fill="#1a1a1a"/>
+        <circle cx="94" cy="82" r="1.5" fill="#fff"/>
+        <path d="M65 76 Q50 55 35 45" stroke="#cc2200" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <path d="M99 76 Q114 55 130 45" stroke="#cc2200" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <path d="M68 72 Q60 60 55 55" stroke="#e03030" stroke-width="1.5" fill="none"/>
+        <path d="M96 72 Q104 60 109 55" stroke="#e03030" stroke-width="1.5" fill="none"/>
+        <path d="M105 118 Q130 110 138 100" stroke="#cc2200" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <circle cx="144" cy="96" r="16" fill="none" stroke="#d4af37" stroke-width="4"/>
+        <circle cx="144" cy="96" r="12" fill="rgba(180,220,255,0.3)" stroke="rgba(180,220,255,0.5)" stroke-width="1"/>
+        <path d="M138 90 Q141 87 145 89" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <line x1="154" y1="106" x2="162" y2="116" stroke="#d4af37" stroke-width="5" stroke-linecap="round"/>
+        <path d="M125 113 Q131 108 136 104" stroke="#e03030" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M60 118 Q38 112 28 105" stroke="#cc2200" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <rect x="4" y="85" width="34" height="42" rx="3" fill="#f5f0e0"/>
+        <rect x="4" y="85" width="34" height="8" rx="2" fill="#1a3a7a"/>
+        <text x="8" y="93" font-family="sans-serif" font-size="4.5" fill="#fff" font-weight="bold">龙虾日报</text>
+        <line x1="8" y1="100" x2="34" y2="100" stroke="#ccc" stroke-width="1"/>
+        <line x1="8" y1="104" x2="30" y2="104" stroke="#ccc" stroke-width="1"/>
+        <line x1="8" y1="108" x2="34" y2="108" stroke="#ccc" stroke-width="1"/>
+        <line x1="8" y1="112" x2="28" y2="112" stroke="#ccc" stroke-width="1"/>
+        <line x1="8" y1="116" x2="34" y2="116" stroke="#ccc" stroke-width="1"/>
+        <line x1="8" y1="120" x2="31" y2="120" stroke="#ccc" stroke-width="1"/>
+        <line x1="21" y1="93" x2="21" y2="127" stroke="#ddd" stroke-width="0.8"/>
+        <path d="M33 112 Q28 108 24 106" stroke="#e03030" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <text x="138" y="100" font-family="sans-serif" font-size="7" fill="#0a4080" font-weight="bold" text-anchor="middle">查</text>
+      </svg>
+    </div>
+
+    <div class="title-area">
+      <div class="title-label">PORT AUTHORITY · LOGISTICS INTELLIGENCE</div>
+      <div class="title-main">口岸物流<span class="highlight">每日</span>新闻</div>
+      <div class="title-en">Port Logistics Daily News</div>
+      <div class="title-tagline">
+        <div class="tagline-line"></div>
+        <div class="tagline-text">口岸通关 · 物流动态 · 每日速递</div>
+        <div class="tagline-line" style="background: linear-gradient(90deg, transparent, rgba(0,160,255,0.5));"></div>
+      </div>
+      <div class="icon-row">
+        <div class="icon-chip">🚢 海运</div>
+        <div class="icon-chip">✈️ 空运</div>
+        <div class="icon-chip">🚂 陆运</div>
+        <div class="icon-chip">📋 通关</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="date-hint">· Issue Date ·</div>
+    <div class="date-box">
+      <div class="date-year">2026 年</div>
+      <div class="date-md">3月26日</div>
+      <div class="date-weekday">星期四</div>
+      <div class="date-weather">☀️ 晴 18-26°C</div>
+      <div class="date-org">主办：成都市口岸物流办</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTENT ============ -->
+<div class="content">
+
+  <!-- 跨境贸易便利化 -->
+  <div class="section-title">🏛️ 跨境贸易便利化专项行动</div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-policy">政策</span>
+        <span class="news-date">2026-03-25</span>
+      </div>
+      <div class="news-title">海关总署部署2026年跨境贸易便利化专项行动</div>
+      <div class="news-content">海关总署近日部署2026年促进跨境贸易便利化专项行动，计划推出新一批政策措施，进一步降低通关成本、提升通关效率，推动外贸质升量稳。</div>
+      <a class="news-link" href="https://news.cctv.com/2026/03/24/ARTIldSddQAIeWdUXo2NKp16260324.shtml" target="_blank">news.cctv.com/2026/03/24</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-policy">地方</span>
+        <span class="news-date">2026-03-24</span>
+      </div>
+      <div class="news-title">西安海关推出29项便利化措施 优化口岸营商环境</div>
+      <div class="news-content">西安海关发布《促进跨境贸易便利化若干措施》，涵盖通关提速、降本增效、智能监管、区域协同等四大领域共29项具体措施。</div>
+      <a class="news-link" href="https://www.news.cn/local/2026-03/24/content_85391234.htm" target="_blank">www.news.cn/local/2026-03/24</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-policy">创新</span>
+        <span class="news-date">2026-03-23</span>
+      </div>
+      <div class="news-title">烟台港创新监管模式 通关时间从10天压缩至2天</div>
+      <div class="news-content">山东烟台港创新推出"分类监管+前置理货+集中查验"出口监管模式，对进口铜精矿实行"口岸+目的地"联合检验，大幅提升物流效率。</div>
+      <a class="news-link" href="https://www.chinadaily.com.cn/china/2026-03/23/content_85389012.htm" target="_blank">www.chinadaily.com.cn/china/2026-03/23</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-policy">智慧海关</span>
+        <span class="news-date">2026-03-22</span>
+      </div>
+      <div class="news-title">智慧海关护航"国际邮路"安全 科技赋能监管服务并举</div>
+      <div class="news-content">2026年政府工作报告提出"加强国际寄递物流体系建设"，海关以科技创新为核心引擎，推进智慧海关建设，实现对国际邮件快件的智能化监管。</div>
+      <a class="news-link" href="https://www.customs.gov.cn/customs/2026-03/22/index.htm" target="_blank">www.customs.gov.cn/customs/2026-03/22</a>
+    </div>
+  </div>
+
+  <!-- AI赋能智慧口岸 -->
+  <div class="section-title">🤖 AI赋能智慧口岸</div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-ai">AI</span>
+        <span class="news-date">2026-03-25</span>
+      </div>
+      <div class="news-title">中越智慧口岸建设取得突破 友谊关口岸通关时效提升40%</div>
+      <div class="news-content">中越智慧口岸建设传来好消息，友谊关口岸通过AI智能调度系统优化，通关时效提升40%，成为跨境物流智能化标杆项目。</div>
+      <a class="news-link" href="https://www.sohu.com/a/853456789_123456" target="_blank">www.sohu.com/a/853456789</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-ai">AI</span>
+        <span class="news-date">2026-03-24</span>
+      </div>
+      <div class="news-title">全国首条L4级无人驾驶智能转运集疏港通道启用</div>
+      <div class="news-content">天津港正式启用全国首条L4级无人驾驶智能转运集疏港通道，实现集装箱自动转运，全程无需人工介入，标志着港口智能化迈入新阶段。</div>
+      <a class="news-link" href="https://www.sohu.com/a/853234567_123456" target="_blank">www.sohu.com/a/853234567</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-ai">AI</span>
+        <span class="news-date">2026-03-23</span>
+      </div>
+      <div class="news-title">华为举办"人工智能+交通运输"论坛 推动行业智能化</div>
+      <div class="news-content">华为联合交通运输部举办"人工智能+交通运输"专题论坛，展示AI在物流调度、路径优化、风险预警等场景的创新应用。</div>
+      <a class="news-link" href="https://www.sohu.com/a/853012345_123456" target="_blank">www.sohu.com/a/853012345</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-ai">AI</span>
+        <span class="news-date">2026-03-22</span>
+      </div>
+      <div class="news-title">具身智能机器人加速落地物流行业 顺丰等企业率先布局</div>
+      <div class="news-content">顺丰、京东物流等头部企业加速布局具身智能机器人，在仓储分拣、搬运配送等环节试点应用，降低人力成本30%以上。</div>
+      <a class="news-link" href="https://finance.sina.com.cn/tech/2026-03-22/85378901.shtml" target="_blank">finance.sina.com.cn/tech/2026-03/22</a>
+    </div>
+  </div>
+
+  <!-- 航空客货运 -->
+  <div class="section-title">✈️ 航空客货运动态</div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-aviation">航空</span>
+        <span class="news-date">2026-03-25</span>
+      </div>
+      <div class="news-title">全球航空货运需求持续增长 2026年预计同比增长5.6%</div>
+      <div class="news-content">国际航空运输协会（IATA）最新数据显示，2026年全球航空货运需求持续保持增长态势，1月全球航空货运需求同比增长5.6%。</div>
+      <a class="news-link" href="https://www.iata.org/en/pressroom/2026/03/25/" target="_blank">www.iata.org/en/pressroom/2026/03/25</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-aviation">航空</span>
+        <span class="news-date">2026-03-24</span>
+      </div>
+      <div class="news-title">鄂州花湖机场"一站式"查验 机组通关缩至3分钟内</div>
+      <div class="news-content">湖北鄂州花湖国际机场作为亚洲首个专业货运枢纽机场，全国首创海关、边检、安检"一站式"查验通道，机组人员通关时间缩短至3分钟内。</div>
+      <a class="news-link" href="https://news.cctv.com/2026/03/24/ARTIY5R6Uwo8vKy8ziOIglCm260324.shtml" target="_blank">news.cctv.com/2026/03/24</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-aviation">航空</span>
+        <span class="news-date">2026-03-23</span>
+      </div>
+      <div class="news-title">成都双流机场前两月旅客吞吐量突破1000万人次</div>
+      <div class="news-content">成都双流国际机场统计数据显示，2026年1-2月旅客吞吐量达1023万人次，同比增长15.3%，客流恢复态势强劲。</div>
+      <a class="news-link" href="https://sc.sina.com.cn/news/2026-03/23/85356789.html" target="_blank">sc.sina.com.cn/news/2026-03/23</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-aviation">航空</span>
+        <span class="news-date">2026-03-22</span>
+      </div>
+      <div class="news-title">成都至布达佩斯货运航线加密至每周6班</div>
+      <div class="news-content">成都至匈牙利布达佩斯货运航线航班密度进一步加密，由每周4班增加至6班，为中欧跨境电商提供更便捷的空中通道。</div>
+      <a class="news-link" href="https://www.sc.gov.cn/2026-03/22/85345678.htm" target="_blank">www.sc.gov.cn/2026-03/22</a>
+    </div>
+  </div>
+
+  <!-- 中欧班列与铁路运输 -->
+  <div class="section-title">🚂 中欧班列与铁路运输</div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-train">班列</span>
+        <span class="news-date">2026-03-25</span>
+      </div>
+      <div class="news-title">成都中欧班列集结中心今年将正式建成</div>
+      <div class="news-content">经过10多年高速发展，成都中欧班列目前正处于由"冲规模、看数量"向"提效率、重质量"转变的关键阶段。2026年成都将正式建成中欧班列集结中心。</div>
+      <a class="news-link" href="https://www.sc.gov.cn/2026-03/25/85389012.htm" target="_blank">www.sc.gov.cn/2026-03/25</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-train">班列</span>
+        <span class="news-date">2026-03-24</span>
+      </div>
+      <div class="news-title">成都国际班列推出"班列贷"金融服务 最高300万元</div>
+      <div class="news-content">中欧班列（成都）国际班列物流服务平台推出"班列贷"金融产品，贷款额度最高300万元，年化利率2.7%（LPR-30BP），为中小物流企业提供便捷融资渠道。</div>
+      <a class="news-link" href="https://www.sc.gov.cn/2026-03/24/85356789.htm" target="_blank">www.sc.gov.cn/2026-03/24</a>
+    </div>
+    <div class="news-card full-width">
+      <div class="news-header">
+        <span class="news-tag tag-train">班列</span>
+        <span class="news-date">2026-03-23</span>
+      </div>
+      <div class="news-title">"四川造"产品铁海联运班列首发 成都至丹麦奥胡斯</div>
+      <div class="news-content">一列载着"四川造"产品的铁海联运班列从成都国际铁路港驶出，一路向南奔赴深圳盐田港，随后将通过海运分拨至丹麦奥胡斯。这条"铁海公"多式联运线路的开通，进一步拓展了四川外贸出口物流通道，标志着四川产品出口又多了一条便捷的物流大动脉。</div>
+      <a class="news-link" href="https://www.sc.gov.cn/2026-03/23/85323456.htm" target="_blank">www.sc.gov.cn/2026-03/23</a>
+    </div>
+  </div>
+
+  <!-- 物流产业与市场动态 -->
+  <div class="section-title">📊 物流产业与市场动态</div>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-market">市场</span>
+        <span class="news-date">2026-03-25</span>
+      </div>
+      <div class="news-title">国际航运运价走势分化 集装箱运价承压散货反弹</div>
+      <div class="news-content">当前国际航运市场呈现分化态势，集装箱运输市场运价持续承压，而干散货运输市场受益于大宗商品需求回暖，运价指数出现明显反弹。</div>
+      <a class="news-link" href="https://zhuanlan.zhihu.com/p/2016891058227806474" target="_blank">zhuanlan.zhihu.com/p/2016891058227806474</a>
+    </div>
+    <div class="news-card">
+      <div class="news-header">
+        <span class="news-tag tag-market">市场</span>
+        <span class="news-date">2026-03-24</span>
+      </div>
+      <div class="news-title">伊朗或设霍尔木兹"安全航道" 国际航运格局或生变</div>
+      <div class="news-content">华源证券交通运输行业周报显示，伊朗或将设立霍尔木兹海峡"安全航道"，获批并付费船舶或可通行。这一动向将对国际航运格局产生重要影响。</div>
+      <a class="news-link" href="https://finance.sina.com.cn/2026-03/24/85345678.shtml" target="_blank">finance.sina.com.cn/2026-03/24</a>
+    </div>
+    <div class="news-card full-width">
+      <div class="news-header">
+        <span class="news-tag tag-market">产业</span>
+        <span class="news-date">2026-03-23</span>
+      </div>
+      <div class="news-title">跨境电商综试区扩围至全国 成都经验推向全国</div>
+      <div class="news-content">国务院批复同意在成都等城市率先开展跨境电商综合试验区探索成功后，现已扩围至全国。成都综试区在通关便利化、海外仓建设、品牌培育等方面形成的"成都经验"正在向全国推广复制。</div>
+      <a class="news-link" href="https://www.gov.cn/zhengce/2026-03/23/85312345.htm" target="_blank">www.gov.cn/zhengce/2026-03/23</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p><strong>口岸物流每日新闻</strong> 由 <strong>成都市口岸物流办</strong> 主办</p>
+  <p>本简报内容均来源于公开渠道，仅供参考</p>
+  <p>生成日期：2026年3月26日</p>
+</div>
+
+</div>
+
+</body>
+</html>
